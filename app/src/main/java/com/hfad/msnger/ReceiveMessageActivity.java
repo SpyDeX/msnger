@@ -13,6 +13,7 @@ public class ReceiveMessageActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_recieve_message);
+        this.setTitle("my title");
 
         Intent intent = getIntent();
         String subj = intent.getStringExtra(Intent.EXTRA_SUBJECT);

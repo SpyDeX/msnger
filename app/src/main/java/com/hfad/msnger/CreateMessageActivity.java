@@ -18,8 +18,9 @@ public class CreateMessageActivity extends Activity {
     //Вызвать onSendMessage() при щелчке на кнопке
     public void onSendMessage(View view) {
         Intent intent = new Intent(Intent.ACTION_SEND);
-
         intent.setType("text/*");
+
+        //Intent intent = new Intent(this, ReceiveMessageActivity.class);
 
         EditText edText = findViewById(R.id.message);
         EditText edSubj = findViewById(R.id.subject);
@@ -27,7 +28,8 @@ public class CreateMessageActivity extends Activity {
         intent.putExtra(Intent.EXTRA_SUBJECT, edSubj.getText().toString() );
         intent.putExtra(Intent.EXTRA_TEXT, edText.getText().toString() );
 
-        intent = Intent.createChooser(intent, getString(R.string.intent_send_title));
+        //receiver = intent.resolveActivity(getPackageManager());
+        intent = Intent.createChooser( intent, getString(R.string.intent_send_title) );
         startActivity(intent);
     }
 }

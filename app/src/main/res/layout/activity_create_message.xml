@@ -4,8 +4,21 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:padding="16dp"
     tools:context="com.hfad.msnger.CreateMessageActivity">
+
+    <EditText
+        android:id="@+id/subject"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:gravity="start"
+        android:hint="@string/textsubj_hint"
+        android:inputType="textMultiLine"
+        android:scrollbars="vertical"
+        android:selectAllOnFocus="false"
+        android:singleLine="true"
+        android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large" />
+
 
     <EditText
         android:id="@+id/message"
@@ -13,7 +26,7 @@
         android:layout_height="393dp"
         android:ems="10"
         android:gravity="start"
-        android:hint="@string/send_hint"
+        android:hint="@string/textbody_hint"
         android:inputType="textMultiLine"
         android:scrollbars="vertical"
         android:selectAllOnFocus="false"
@@ -23,7 +36,7 @@
     <Button
         android:id="@+id/send"
         android:layout_width="wrap_content"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:layout_gravity="bottom|center_horizontal"
         android:layout_marginTop="20dp"
         android:onClick="onSendMessage"

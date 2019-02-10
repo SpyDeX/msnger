@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context="com.hfad.msnger.CreateMessageActivity">
+
+    <EditText
+        android:id="@+id/message"
+        android:layout_width="match_parent"
+        android:layout_height="393dp"
+        android:ems="10"
+        android:gravity="start"
+        android:hint="@string/send_hint"
+        android:inputType="textMultiLine"
+        android:scrollbars="vertical"
+        android:selectAllOnFocus="false"
+        android:singleLine="false"
+        android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large" />
+
+    <Button
+        android:id="@+id/send"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="bottom|center_horizontal"
+        android:layout_marginTop="20dp"
+        android:onClick="onSendMessage"
+        android:text="@string/btn_send_ttl"
+        android:textAlignment="center" />
+</LinearLayout>

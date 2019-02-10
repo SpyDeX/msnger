@@ -3,4 +3,5 @@
     <string name="textbody_hint">Enter a message</string>
     <string name="textsubj_hint">Message title</string>
     <string name="btn_send_ttl">Send</string>
+    <string name="intent_send_title">Send message to...</string>
 </resources>
